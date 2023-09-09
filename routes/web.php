@@ -13,11 +13,13 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+//Auth::Routes();
 
 Route::get('/',[HomeController::class,'index']);
 
 Route::get('/home',[HomeController::class,'redirect']);
 
+/*
 Route::get('/login', function () {
     return view('auth.login'); 
 })->name('login');
@@ -25,7 +27,7 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
-
+*/
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

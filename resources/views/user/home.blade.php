@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>HealthHelp</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -31,9 +31,9 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="#"><span class="mai-call text-primary"></span>+237 679 40 35 30</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="#"><span class="mai-mail text-primary"></span>healthhelp@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
@@ -50,7 +50,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+        <a class="navbar-brand" href="#"><span class="text-primary">Health</span>-Help</a>
 
         <form action="#">
           <div class="input-group input-navbar">
@@ -85,6 +85,9 @@
             @if (Route::has('login'))
 
               @auth
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('myappointment') }}" style="background-color: greenyellow; color:white">My Appointments</a>
+              </li>
               <form action="{{ route('logout') }}" method="post">
                 @csrf
                 <li class="nav-item">
@@ -93,7 +96,7 @@
               </form>
               
            
-              @else 
+              @else             
                 <li class="nav-item">
                   <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
                 </li>

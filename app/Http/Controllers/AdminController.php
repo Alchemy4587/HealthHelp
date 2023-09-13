@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 use App\Models\Doctor;
 
@@ -36,4 +37,33 @@ class AdminController extends Controller
 
         return redirect()->back()->with('message','Doctor Added Successfully');
     }
+
+    public function showappointment()
+    {
+        $data=appointment::all();
+        return view('admin.showappointment',compact('data'));
+    }
+
+    public function approved($id)
+    {
+        $data=appointment::find($id);
+
+        $data->status='approved';
+
+        $data->save();
+
+        return redirect()->back();
+    }
+
+    public function cancelled($id)
+    {
+        $data=appointment::find($id);
+
+        $data->status='cancelled';
+
+        $data->save();
+
+        return redirect()->back();
+    }
+
 }

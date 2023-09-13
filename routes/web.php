@@ -33,7 +33,7 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
-])->group(function () {
+])->group(function () {     
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
@@ -48,3 +48,10 @@ Route::post('/appointment',[HomeController::class,'appointment']);
 Route::get('/myappointment',[HomeController::class,'myappointment']);
 
 Route::get('/cancel_appoint/{id}',[HomeController::class,'cancel_appoint']);
+
+Route::get('/showappointment',[AdminController::class,'showappointment']);
+
+Route::get('/approved/{id}',[AdminController::class,'approved']);
+
+Route::get('/cancelled/{id}',[AdminController::class,'cancelled']);
+

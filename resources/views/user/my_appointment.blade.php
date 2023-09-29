@@ -19,12 +19,19 @@
   <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
   <link rel="stylesheet" href="../assets/css/theme.css">
+  <style>
+    #body_appointment{
+      background-image: url("../assets/img/schedule.avif");
+      height: 80vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Back to top button -->
   <div class="back-to-top"></div>
-
   <header>
     <div class="topbar">
       <div class="container">
@@ -50,17 +57,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">Health</span>-Help</a>
-
-        <form action="#">
-          <div class="input-group input-navbar">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
-          </div>
-        </form>
-
+        <div class="logo">
+          <img src="../assets/img/Logo3.0.png" alt="" width="110px">
+         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,7 +67,7 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="{{ url('home') }}">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -86,7 +85,7 @@
 
               @auth
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('myappointment') }}" style="background-color: greenyellow; color:white">My Appointments</a>
+                <a class="nav-link" href="{{ url('myappointment') }}" style="background-color: skyblue; color:black">My Appointments</a>
               </li>
               <form action="{{ route('logout') }}" method="post">
                 @csrf
@@ -113,22 +112,22 @@
     </nav>
   </header>
 
-  <div align="center" style="padding:70px;">
+  <div align="center" style="padding:70px;" id="body_appointment">
     <table>
-        <tr style="background-color: black">
-            <th style="padding:10px; font-size:20px; color:white;">Doctor Name</th>
-            <th style="padding:10px; font-size:20px; color:white;">Date</th>
-            <th style="padding:10px; font-size:20px; color:white;">Message</th>
-            <th style="padding:10px; font-size:20px; color:white;">Status</th>
-            <th style="padding:10px; font-size:20px; color:white;">Cancel Appointment</th>
+        <tr style="background-color: rgb(168, 151, 151)">
+            <th style="padding:10px; font-size:20px; color:black;">Doctor Name</th>
+            <th style="padding:10px; font-size:20px; color:black;">Date</th>
+            <th style="padding:10px; font-size:20px; color:black;">Message</th>
+            <th style="padding:10px; font-size:20px; color:black;">Status</th>
+            <th style="padding:10px; font-size:20px; color:black;">Action</th>
         </tr>
     
         @foreach ($appoint as $appoints)
-            <tr style="background-color: black" align="center">
-                <td style="padding:10px; color:white;">{{ $appoints->doctor }}</td>
-                <td style="padding:10px; color:white;">{{ $appoints->date }}</td>
-                <td style="padding:10px; color:white;">{{ $appoints->message }}</td>
-                <td style="padding:10px; color:white;">{{ $appoints->status }}</td>
+            <tr style="background-color: rgb(168, 151, 151)" align="center">
+                <td style="padding:10px; color:black;">{{ $appoints->doctor }}</td>
+                <td style="padding:10px; color:black;">{{ $appoints->date }}</td>
+                <td style="padding:10px; color:black;">{{ $appoints->message }}</td>
+                <td style="padding:10px; color:black;">{{ $appoints->status }}</td>
                 <td><a class="btn btn-danger" onclick="return confirm('Are You Sure You Want To Cancel Thiscmd')" href="{{ url('cancel_appoint',$appoints->id) }}">Cancel</a></td>
             </tr>
         @endforeach

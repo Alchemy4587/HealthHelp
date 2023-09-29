@@ -9,6 +9,7 @@
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
   <title>HealthHelp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -31,9 +32,9 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span>+237 679 40 35 30</a>
+              <a href="#"><span class="mai-call text-secondary"></span>+237 679 40 35 30</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span>healthhelp@gmail.com</a>
+              <a href="#"><span class="mai-mail text-secondary"></span>healthhelp@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
@@ -50,17 +51,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">Health</span>-Help</a>
-
-        <form action="#">
-          <div class="input-group input-navbar">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
-          </div>
-        </form>
-
+        <div class="logo">
+         <img src="../assets/img/Logo3.0.png" alt="" width="110px">
+        </div>
+        <a class="navbar-brand" href="#"><span class="text-secondary"></span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,13 +62,16 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="{{ url('home') }}">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="{{ url('appointment') }}">Make An Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('doctor') }}">Doctors</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">News</a>
@@ -91,18 +88,18 @@
               <form action="{{ route('logout') }}" method="post">
                 @csrf
                 <li class="nav-item">
-                  <button class="btn btn-primary ml-lg-3">Logout</button>
+                  <button class="btn btn-secondary ml-lg-3">Logout</button>
                 </li>
               </form>
               
            
               @else             
                 <li class="nav-item">
-                  <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
+                  <a class="btn btn-secondary ml-lg-3" href="{{ route('login') }}">Login</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="btn btn-primary ml-lg-3" href="{{ route('register') }}">Register</a>
+                  <a class="btn btn-secondary ml-lg-3" href="{{ route('register') }}">Register</a>
                 </li> 
               @endauth 
 
@@ -127,7 +124,7 @@
       <div class="container text-center wow zoomIn">
         <h1 class="display-4">Health Help</h1>
         <span class="subhead">Let's make your life happier</span><br><br>
-        <a href="#" class="btn btn-primary">Let's Consult</a>
+        <a href="#" class="btn btn-secondary">Let's Consult</a>
       </div>
     </div>
   </div>
@@ -140,7 +137,7 @@
               <div class="circle-shape bg-secondary text-white">
                 <span class="mai-chatbubbles-outline"></span>
               </div>
-              <p><span>Chat</span> with a doctors</p>
+              <p><span>Chat</span> with a doctor</p>
             </div>
           </div>
           <div class="col-md-4 py-3 py-md-0">
@@ -148,7 +145,7 @@
               <div class="circle-shape bg-primary text-white">
                 <span class="mai-shield-checkmark"></span>
               </div>
-              <p><span>One</span>-Health Protection</p>
+              <p><span>Health Help</span>-Protection</p>
             </div>
           </div>
           <div class="col-md-4 py-3 py-md-0">
@@ -156,7 +153,7 @@
               <div class="circle-shape bg-accent text-white">
                 <span class="mai-basket"></span>
               </div>
-              <p><span>One</span>-Health Pharmacy</p>
+              <p><span>Health Help</span>- Pharmacy</p>
             </div>
           </div>
         </div>
@@ -168,12 +165,12 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h1>Welcome to Your Health <br> Center</h1>
-            <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
-            <a href="about.html" class="btn btn-primary">Learn More</a>
+            <p class="text-grey mb-4">Experience the future of healthcare with Health Help, your trusted partner in wellness. Our cutting-edge application offers personalized health solutions, empowering you to take control of your well-being. Discover convenience, reliability, and a healthier you – all in one app. Join us on the journey to a brighter, healthier future today</p>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
-            <div class="img-place custom-img-1">
-              <img src="../assets/img/bg-doctor.png" alt="">
+            <div class="">
+              <img src="../assets/img/dochome.webp" alt="" height="450" width="500">
             </div>
           </div>
         </div>
@@ -204,6 +201,7 @@
     </div>
   </div> --><!-- .banner-home -->
 
+  <!--
   <footer class="page-footer">
     <div class="container">
       <div class="row px-md-3">
@@ -211,9 +209,8 @@
           <h5>Company</h5>
           <ul class="footer-menu">
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Editorial Team</a></li>
-            <li><a href="#">Protection</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Get Started</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
@@ -226,19 +223,11 @@
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
-          <h5>Our partner</h5>
-          <ul class="footer-menu">
-            <li><a href="#">One-Fitness</a></li>
-            <li><a href="#">One-Drugs</a></li>
-            <li><a href="#">One-Live</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-lg-3 py-3">
           <h5>Contact</h5>
-          <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
-          <a href="#" class="footer-link">701-573-7582</a>
-          <a href="#" class="footer-link">healthcare@temporary.net</a>
-
+          <p class="footer-link mt-2">Carrefour Simbock, Yaounde Cameroon</p>
+          <a href="#" class="footer-link">679403530</a>
+          <a href="#" class="footer-link">healthhelp@gmail.com</a>
+      
           <h5 class="mt-3">Social Media</h5>
           <div class="footer-sosmed mt-3">
             <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
@@ -249,10 +238,66 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="bottom-details mt-5">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">HEALTH HELP</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>-->
+  
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Health Help</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Patients</li>
+          <li><a href="#">Medical Records</a></li>
+          <li><a href="#">Schedule Appoitnment</a></li>
+          <li><a href="#">Prescription</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+        </ul>
 
-      <hr>
-
-      <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
+        <ul class="box input-box">
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Send Me Notifications"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">HEALTH HELP</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
     </div>
   </footer>
 

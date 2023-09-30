@@ -2,8 +2,30 @@
 <html lang="en">
   <head>
     @include('admin.css')
-  </head>
+    <style>
+      #show_appt{
+        width: 100%;
+        margin: 30px 30px 0 30px;
+        overflow: auto;
+        background-image: url("../assets/img/showbg.jpg");
+        color: black;
+        border-radius: 8px;
+      }
+      
+      table {
+          border-collapse: collapse;
+      }
 
+      tr {
+          border-bottom: 1px solid #eef0f3;
+          border:1px solid black;
+      }
+      tbody tr td {
+          padding: 10px 15px;
+          border:1px solid black;
+      }
+    </style>
+  </head>
   <body>
     <div class="container-scroller">
       
@@ -14,19 +36,19 @@
 
        @include('admin.navbar')
 
-       <div class="container-fluid page-body-wrapper">
+       <div class="container-fluid page-body-wrapper" id="show_appt">
          <div align="center" style="padding-top:100px;">
           <table>
-            <tr style="background-color: black;">
-              <th style="padding:10px;">Customer Name</th>
-              <th style="padding:10px;">Email</th>
-              <th style="padding:10px;">Phone</th>
-              <th style="padding:10px;">Doctor Name</th>
-              <th style="padding:10px;">Date</th>
-              <th style="padding:10px;">Message</th>
-              <th style="padding:10px;">Status</th>
-              <th style="padding:10px;">Approved</th>
-              <th style="padding:10px;">Cancelled</th>
+            <tr style="background-color: rgb(216, 211, 202);">
+              <th style="padding:10px; border:1px solid black;">Customer Name</th>
+              <th style="padding:10px; border:1px solid black;;">Email</th>
+              <th style="padding:10px; border:1px solid black;;">Phone</th>
+              <th style="padding:10px; border:1px solid black;;">Doctor Name</th>
+              <th style="padding:10px; border:1px solid black;;">Date</th>
+              <th style="padding:10px; border:1px solid black;;">Message</th>
+              <th style="padding:10px; border:1px solid black;;">Status</th>
+              <th style="padding:10px; border:1px solid black;;">Approved</th>
+              <th style="padding:10px; border:1px solid black;;">Cancelled</th>
             </tr>
 
             @foreach ($data as $appoint )

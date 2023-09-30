@@ -20,9 +20,13 @@ class HomeController extends Controller
                 $doctor=doctor::all();
                 return view('user.home',compact('doctor'));
             }
-            else
+            elseif(Auth::user()->usertype=='1')
             {
                 return view('admin.home');
+            }
+            elseif(Auth::user()->usertype=='2')
+            {
+                return view('doctors.home');
             }
         }
 

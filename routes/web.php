@@ -21,6 +21,8 @@ Route::get('/',[HomeController::class,'index']);
 
 Route::get('/home',[HomeController::class,'redirect']);
 
+//Route::get('/home',[DoctorsController::class,'redirect']);
+
 /*
 Route::get('/login', function () {
     return view('auth.login'); 

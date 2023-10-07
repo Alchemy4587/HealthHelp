@@ -7,7 +7,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="doctors/template/pages/tables/basic-table.html">
+      <a class="nav-link" href="{{ url('showappointment') }}">
         <i class="ti-calendar menu-icon"></i>
         <span class="menu-title">Appointment</span>
       </a>
@@ -20,7 +20,7 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">
-        <i class="fas fa-sick menu-icon"></i>
+        <i class="fa-solid fa-hospital-user menu-icon"></i>
         <span class="menu-title">Patients</span>
       </a>
     </li>

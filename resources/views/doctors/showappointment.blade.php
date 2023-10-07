@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('admin.css')
+    @include('doctors.css')
     <style>
       #show_appt{
         width: 100%;
@@ -30,11 +30,11 @@
     <div class="container-scroller">
       
       <!-- partial:partials/_sidebar.html -->
-      @include('admin.sidebar')
+      @include('doctors.sidebar')
       <!-- partial -->
         <!-- partial:partials/_navbar.html -->
 
-       @include('admin.navbar')
+       @include('doctors.navbar')
 
        <div class="container-fluid page-body-wrapper" id="show_appt">
          <div align="center" style="padding-top:100px;">
@@ -77,7 +77,7 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    @include('admin.script')
+    @include('doctors.script')
     <!-- End custom js for this page -->
   </body>
 </html>

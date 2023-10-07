@@ -8,12 +8,12 @@
         <div class="profile-desc">
           <div class="profile-pic">
             <div class="count-indicator">
-              <img class="img-xs rounded-circle " src="admin/assets/images/faces/face15.jpg" alt="">
+              <img class="img-xs rounded-circle " src="admin/assets/images/faces/me.jpg" alt="">
               <span class="count bg-success"></span>
             </div>
             <div class="profile-name">
               <h5 class="mb-0 font-weight-normal">Kanjo EL</h5>
-              <span>Gold Member</span>
+              <span>Admin</span>
             </div>
           </div>
           <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>

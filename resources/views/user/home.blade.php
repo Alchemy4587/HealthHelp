@@ -27,6 +27,7 @@
   <div class="back-to-top"></div>
 
   <header>
+    <!--
     <div class="topbar">
       <div class="container">
         <div class="row">
@@ -45,9 +46,9 @@
               <a href="#"><span class="mai-logo-instagram"></span></a>
             </div>
           </div>
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </div> <!-- .topbar -->
+        </div> 
+      </div> 
+    </div>--> <!-- .topbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
@@ -105,8 +106,8 @@
 
             @endif
           </ul>
-        </div> <!-- .navbar-collapse -->
-      </div> <!-- .container -->
+        </div>
+      </div> 
     </nav>
   </header>
 
@@ -120,7 +121,7 @@
    @endif
 
   <div class="page-hero bg-image" style="background-image: url(../assets/img/doc.jpg);">
-    <div class="hero-section">
+    <div class="hero-section" id="shade">
       <div class="container text-center wow zoomIn">
         <h1 class="display-4">Health Help</h1>
         <span class="subhead">Let's make your life happier</span><br><br>
@@ -128,6 +129,7 @@
       </div>
     </div>
   </div>
+
   <div class="bg-light">
     <div class="page-section py-3 mt-md-n5 custom-index">
       <div class="container">

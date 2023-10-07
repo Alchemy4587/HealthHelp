@@ -47,8 +47,7 @@
               <th style="padding:10px; border:1px solid black;;">Date</th>
               <th style="padding:10px; border:1px solid black;;">Message</th>
               <th style="padding:10px; border:1px solid black;;">Status</th>
-              <th style="padding:10px; border:1px solid black;;">Approved</th>
-              <th style="padding:10px; border:1px solid black;;">Cancelled</th>
+              <th style="padding:10px; border:1px solid black;;">Action</th>
             </tr>
 
             @foreach ($data as $appoint )
@@ -63,8 +62,6 @@
                 <td>{{ $appoint->status }}</td>
                 <td>
                   <a class="btn btn-success" href="{{ url('approved',$appoint->id) }}">Approved</a>
-                </td>
-                <td>
                   <a class="btn btn-danger" href="{{ url('cancelled',$appoint->id) }}">Cancelled</a>
                 </td>
               </tr>

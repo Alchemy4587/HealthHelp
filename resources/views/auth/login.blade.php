@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout style="background-image: url('../assets/img/doc.jpg'); background-size: cover; background-position: center center;">
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />

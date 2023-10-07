@@ -20,8 +20,8 @@
 
   <link rel="stylesheet" href="../assets/css/theme.css">
   <style>
-    #body_appointment{
-      background-image: url("../assets/img/schedule.avif");
+    .card{
+      background-image: url("../assets/img/bg.jpg");
       height: 80vh;
       background-repeat: no-repeat;
       background-size: cover;
@@ -33,28 +33,7 @@
   <!-- Back to top button -->
   <div class="back-to-top"></div>
   <header>
-    <div class="topbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 text-sm">
-            <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span>+237 679 40 35 30</a>
-              <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span>healthhelp@gmail.com</a>
-            </div>
-          </div>
-          <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-            </div>
-          </div>
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </div> <!-- .topbar -->
-
+   
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
         <div class="logo">
@@ -111,7 +90,7 @@
       </div> <!-- .container -->
     </nav>
   </header>
-
+  <!--
   <div align="center" style="padding:70px;" id="body_appointment">
     <table>
         <tr style="background-color: rgb(168, 151, 151)">
@@ -122,7 +101,7 @@
             <th style="padding:10px; font-size:20px; color:black;">Action</th>
         </tr>
     
-        @foreach ($appoint as $appoints)
+       {{--   @foreach ($appoint as $appoints)
             <tr style="background-color: rgb(168, 151, 151)" align="center">
                 <td style="padding:10px; color:black;">{{ $appoints->doctor }}</td>
                 <td style="padding:10px; color:black;">{{ $appoints->date }}</td>
@@ -131,7 +110,41 @@
                 <td><a class="btn btn-danger" onclick="return confirm('Are You Sure You Want To Cancel Thiscmd')" href="{{ url('cancel_appoint',$appoints->id) }}">Cancel</a></td>
             </tr>
         @endforeach
-      </table>    
+      </table> --}}
+  </div>-->
+
+  <div class="col-lg-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">My Appointments</h4>
+        </p>
+        <div class="table-responsive">
+          <table class="table table-bordered table-contextual">
+            <thead>
+              <tr>
+                <th>Doctor Name</th>
+                <th>Date</th>
+                <th>Message</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              @foreach ($appoint as $appoints)
+                <tr class="table-info">
+                  <td>{{ $appoints->doctor }}</td>
+                  <td>{{ $appoints->date }}</td>
+                  <td>{{ $appoints->message }}</td>
+                  <td>{{ $appoints->status }}</td>
+                  <td><a class="btn btn-danger" onclick="return confirm('Are You Sure You Want To Cancel Thiscmd')" href="{{ url('cancel_appoint',$appoints->id) }}">Cancel</a></td>
+                </tr>
+              @endforeach
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 
 <script src="../assets/js/jquery-3.5.1.min.js"></script>

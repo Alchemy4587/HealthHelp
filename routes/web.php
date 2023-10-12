@@ -48,6 +48,12 @@ Route::post('/upload_doctor',[AdminController::class,'upload']);
 
 Route::post('/appointment',[HomeController::class,'appointment']);
 
+Route::get('/about',[HomeController::class,'about']);
+
+Route::get('/news',[HomeController::class,'news']);
+
+Route::get('/contact',[HomeController::class,'contact']);
+
 Route::get('/myappointment',[HomeController::class,'myappointment']);
 
 Route::get('/cancel_appoint/{id}',[HomeController::class,'cancel_appoint']);

@@ -103,4 +103,19 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
+
+    public function about()
+    {
+        return view('user.about');
+    }
+
+    public function news()
+    {
+        return view('user.news');
+    }
+
+    public function contact()
+    {
+        return view('user.contact');
+    }
 }

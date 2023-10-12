@@ -31,6 +31,9 @@
   <link href="Logis/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="Logis/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="Logis/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="Logis/assets/css/main.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -84,11 +87,11 @@
            
               @else             
                 <li class="nav-item">
-                  <a class="btn btn-secondary ml-lg-3" href="{{ route('login') }}">Login</a>
+                  <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="btn btn-secondary ml-lg-3" href="{{ route('register') }}">Register</a>
+                  <a class="btn btn-primary ml-lg-3" href="{{ route('register') }}">Register</a>
                 </li> 
               @endauth 
 
@@ -113,7 +116,6 @@
       <div class="container text-center wow zoomIn">
         <h1 class="display-4">Health Help</h1>
         <span class="subhead">Health Is Wealth</span><br><br>
-        <a href="#" class="btn btn-secondary">Let's Consult</a>
       </div>
     </div>
   </div>
@@ -156,7 +158,7 @@
 
       <div class="row gy-4">
         <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-          <img src="Logis/assets/img/about.jpg" class="img-fluid" alt="">
+          <img src="Logis/assets/img/team.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-6 content order-last  order-lg-first">
           <h3>About Us</h3>

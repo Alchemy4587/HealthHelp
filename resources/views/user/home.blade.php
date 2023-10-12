@@ -186,10 +186,11 @@
           <li><a href="#">Get started</a></li>
         </ul>
         <ul class="box">
-          <li class="link_name">Patients</li>
-          <li><a href="#">Medical Records</a></li>
-          <li><a href="#">Schedule Appoitnment</a></li>
-          <li><a href="#">Prescription</a></li>
+          <li class="link_name">More</li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Join As Doctors</a></li>
         </ul>
         <ul class="box">
           <li class="link_name">Account</li>

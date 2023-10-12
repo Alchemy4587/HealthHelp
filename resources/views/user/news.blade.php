@@ -93,7 +93,7 @@
       <div class="container text-center wow fadeInUp">
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Blog</li>
           </ol>
         </nav>
@@ -139,7 +139,7 @@
                     <a href="#">Dental</a>
                   </div>
                   <a href="blog-details" class="post-thumb">
-                    <img src="../assets/img/blog/blog_3.jpg" alt="">
+                    <img src="../assets/img/blog/black-doctor-patient.jpg" alt="">
                   </a>
                 </div>
                 <div class="body">
@@ -164,7 +164,7 @@
                     <a href="#">Cancer</a>
                   </div>
                   <a href="blog-details" class="post-thumb">
-                    <img src="../assets/img/blog/blog_3.jpg" alt="">
+                    <img src="../assets/img/blog/sample test.jpg" alt="">
                   </a>
                 </div>
                 <div class="body">
@@ -260,7 +260,7 @@
                     <a href="#">General Health</a>
                   </div>
                   <a href="blog-details" class="post-thumb">
-                    <img src="../assets/img/blog/blog_2.jpg" alt="">
+                    <img src="../assets/img/blog/racism.jpg" alt="">
                   </a>
                 </div>
                 <div class="body">
@@ -285,7 +285,7 @@
                     <a href="#">Environmental Health</a>
                   </div>
                   <a href="blog-details" class="post-thumb">
-                    <img src="../assets/img/blog/blog_2.jpg" alt="">
+                    <img src="../assets/img/blog/breath.jpg" alt="">
                   </a>
                 </div>
                 <div class="body">
@@ -344,9 +344,9 @@
                   <img src="../assets/img/blog/blog_1.jpg" alt="">
                 </a>
                 <div class="content">
-                  <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
+                  <h5 class="post-title"><a href="#">Increase in infant mortality rate in the past month</a></h5>
                   <div class="meta">
-                    <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
+                    <a href="#"><span class="mai-calendar"></span> October 12, 2023</a>
                     <a href="#"><span class="mai-person"></span> Admin</a>
                     <a href="#"><span class="mai-chatbubbles"></span> 19</a>
                   </div>
@@ -357,11 +357,11 @@
                   <img src="../assets/img/blog/blog_2.jpg" alt="">
                 </a>
                 <div class="content">
-                  <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
+                  <h5 class="post-title"><a href="#">What are the causes of low sperm count</a></h5>
                   <div class="meta">
-                    <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
+                    <a href="#"><span class="mai-calendar"></span> October 12, 2023</a>
                     <a href="#"><span class="mai-person"></span> Admin</a>
-                    <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                    <a href="#"><span class="mai-chatbubbles"></span> 39</a>
                   </div>
                 </div>
               </div>
@@ -370,33 +370,22 @@
                   <img src="../assets/img/blog/blog_3.jpg" alt="">
                 </a>
                 <div class="content">
-                  <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
+                  <h5 class="post-title"><a href="#">Easy tips to prevent gastric</a></h5>
                   <div class="meta">
-                    <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
+                    <a href="#"><span class="mai-calendar"></span> October 12, 2023</a>
                     <a href="#"><span class="mai-person"></span> Admin</a>
-                    <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                    <a href="#"><span class="mai-chatbubbles"></span> 17</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="sidebar-block">
-              <h3 class="sidebar-title">Tag Cloud</h3>
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">dish</a>
-                <a href="#" class="tag-cloud-link">menu</a>
-                <a href="#" class="tag-cloud-link">food</a>
-                <a href="#" class="tag-cloud-link">sweet</a>
-                <a href="#" class="tag-cloud-link">tasty</a>
-                <a href="#" class="tag-cloud-link">delicious</a>
-                <a href="#" class="tag-cloud-link">desserts</a>
-                <a href="#" class="tag-cloud-link">drinks</a>
-              </div>
-            </div>
-
-            <div class="sidebar-block">
-              <h3 class="sidebar-title">Paragraph</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+              <h3 class="sidebar-title">Health Tip Of The Day</h3>
+              <p>
+                Stay hydrated for a glowing skin and a healthy body. Aim to drink at least 8 glasses of water a day to keep your skin radiant and support your overall well-being. <br> <span>#StayHydrated</span> <br>
+                #HealthyHabits
+              </p>
             </div>
           </div>
         </div> 

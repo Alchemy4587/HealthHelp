@@ -76,7 +76,7 @@
         </div>
 
         <div class="col-12 text-center mt-4 wow zoomIn">
-          <a href="blog.html" class="btn btn-secondary">Read More</a>
+          <a href="{{ url('news') }}" class="btn btn-secondary">Read More</a>
         </div>
 
       </div>

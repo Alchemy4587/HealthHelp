@@ -61,7 +61,7 @@
 
               @auth
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('myappointment') }}" style="background-color: greenyellow; color:white">My Appointments</a>
+                <a class="nav-link" href="{{ url('myappointment') }}" style="background-color: rgb(190, 241, 113); color:white">My Appointments</a>
               </li>
               <form action="{{ route('logout') }}" method="post">
                 @csrf

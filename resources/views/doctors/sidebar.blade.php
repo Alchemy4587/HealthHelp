@@ -14,7 +14,7 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="doctors/template/pages/forms/basic_elements.html">
-        <i class="ti-layout-list-post menu-icon"></i>
+        <i class="fa-solid fa-user-doctor menu-icon"></i>
         <span class="menu-title">Doctors</span>
       </a>
     </li>
